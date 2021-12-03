@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint --ext .ts,.js,.vue .",
+    "format": "eslint --ext .ts,.js,.vue . --fix",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^8.0.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "husky": "^7.0.4",
+    "nuxt3": "latest"
+  }
+}
