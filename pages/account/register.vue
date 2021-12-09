@@ -1,30 +1,31 @@
 <template>
   <div>
-    Register
+    <h1>Register</h1>
+    <form class="wizmi-form">
+      <div class="wizmi-form-group">
+        <label class="wizmi-label" for="username">Username</label>
+        <input v-model="user.username" type="text" name="username" placeholder="Wizmi">
+      </div>
 
-    <div class="form-group">
-      <label for="username">Username : </label>
-      <input v-model="user.username" type="text" name="username" placeholder="Wizmi">
-    </div>
+      <div class="wizmi-form-group">
+        <label class="wizmi-label" for="email">Email</label>
+        <input v-model="user.email" type="text" name="email" placeholder="wizmi@gmail.com">
+      </div>
 
-    <div class="form-group">
-      <label for="email">Email : </label>
-      <input v-model="user.email" type="text" name="email" placeholder="wizmi@gmail.com">
-    </div>
+      <div class="wizmi-form-group">
+        <label class="wizmi-label" for="password">Password</label>
+        <input v-model="user.password" type="password" name="password">
+      </div>
 
-    <div class="form-group">
-      <label for="password">Password : </label>
-      <input v-model="user.password" type="password" name="password">
-    </div>
+      <div class="wizmi-form-group">
+        <label class="wizmi-label" for="passwordVerify">Confirm password</label>
+        <input v-model="user.passwordVerify" type="password" name="passwordVerify">
+      </div>
 
-    <div class="form-group">
-      <label for="passwordVerify">Confirm password : </label>
-      <input v-model="user.passwordVerify" type="password" name="passwordVerify">
-    </div>
-
-    <button @click="submitForm()">
-      LETS GOOOO
-    </button>
+      <button class="wizmi-button-primary" @click="submitForm()">
+        LETS GOOOO
+      </button>
+    </form>
   </div>
 </template>
 

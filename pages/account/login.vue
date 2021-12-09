@@ -1,20 +1,21 @@
 <template>
   <div>
-    Login
+    <h1>Login</h1>
+    <form class="wizmi-form">
+      <div class="wizmi-form-group">
+        <label class="wizmi-label" for="username">Email</label>
+        <input v-model="user.email" type="text" name="email">
+      </div>
 
-    <div class="form-group">
-      <label for="username">Email : </label>
-      <input v-model="user.email" type="text" name="email">
-    </div>
+      <div class="wizmi-form-group">
+        <label class="wizmi-label" for="password">Password</label>
+        <input v-model="user.password" type="password" name="password">
+      </div>
 
-    <div class="form-group">
-      <label for="password">Password : </label>
-      <input v-model="user.password" type="password" name="password">
-    </div>
-
-    <button @click="submitForm()">
-      LETS GOOOO
-    </button>
+      <button class="wizmi-button-primary" @click="submitForm()">
+        LETS GOOOO
+      </button>
+    </form>
   </div>
 </template>
 
