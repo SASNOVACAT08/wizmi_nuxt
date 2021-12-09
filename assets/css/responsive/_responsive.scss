@@ -17,3 +17,7 @@
 @media only screen and (max-width: 576px) {
   @import "./sm/sm";
 }
+
+@media only screen and (max-width: 0px) {
+  @import "./xs/xs";
+}
